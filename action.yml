@@ -1,0 +1,43 @@
+name: GitHub Organization Repository Collaborator Action
+
+inputs:
+  token:
+    description: 'A Personal Access token with user:email, repo and admin:org scope'
+    required: true
+  org:
+    description: 'GitHub organization to retrieve data for'
+    required: false
+  affil: 
+    description: 'Affiliation to filter by'
+    required: false
+  permission:
+    description: 'The repo collaborator permission to query for'
+    required: false
+  days:
+    description: 'Number of days to look back for contributions'
+    required: false
+  json:
+    description: 'Additionally export report in JSON format'
+    required: false
+  committer-name:
+    description: 'The name of the committer that will appear in the Git history'
+    default: 'github-actions'
+    required: false
+  committer-email:
+    description: 'The committer email that will appear in the Git history'
+    default: 'github-actions@github.com'
+    required: false
+  appid:
+    required: false
+  privatekey:
+    required: false
+  installationid:
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'list'
+  color: 'blue'
