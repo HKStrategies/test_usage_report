@@ -29,6 +29,6 @@ jobs:
           permission: 'ALL'
           days: '90'
           json: 'FALSE'
-          appid: ${{ secrets.APPID }}
-          privatekey: ${{ secrets.PRIVATEKEY }}
-          installationid: ${{ secrets.INSTALLATIONID }}
+        #  appid: ${{ secrets.APPID }}
+        #  privatekey: ${{ secrets.PRIVATEKEY }}
+        #  installationid: ${{ secrets.INSTALLATIONID }}
