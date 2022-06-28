@@ -24,7 +24,7 @@ jobs:
         uses: ./
         with:
           token: ${{ secrets.ORG_TOKEN }}
-          org: 'H+K Strategies'
+          org: 'HKStrategies'
           affil: 'ALL'
           permission: 'ALL'
           days: '90'
